@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+	font-family: 'Poppins', sans-serif;}
+body {
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+header {
+	background-color: black;
+}
+nav ul {
+list-style: none;
+display: flex;
+}
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 1.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1rem;
+	text-align: center;
+}
+.menu-navigare ul a:is(:link, :active, :visited).active {
+	background-color: rgba(255, 255, 255, 0.685);
+	color: rgb(0, 0, 0);
+	border-radius: 15px;
+	transition: 0.5s;
+}
+
+
+header {
+	background-color: rgba(0, 0, 0, 0.726);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	
+}
+.img {
+	padding: 0px 30px;
+}
+.img img {
+	height: 80px;
+	
+}
+.menu-navigare {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 20px 50px;
+	align-self: center ;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.897);
+	transition: 0.4s;
+	
+}
+@media (max-width:1200px) {
+	.menu-navigare {
+		width: 100%;
+	
+	}
+	.header-index {
+		display: flex;
+		justify-content: space-around;
+	}
+	.menu-navigare {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		grid-template-rows: 1fr;
+		grid-column-gap: 25vw;
+		grid-row-gap: 0px;
+		padding: 10px 0px;
+		align-self: baseline;
+	}
+	.img { grid-area: 1 / 1 / 2 / 2; 
+		justify-self: center;
+		align-self: center;
+	
+	}
+	.mobile-container { 
+		grid-area: 1 / 2 / 2 / 3; 
+		justify-self: end;
+		padding-right: 40px;
+		align-self:center;
+		}
+	.img {
+		position: relative;
+
+	}
+	.img img {
+		width: 150px;
+		height: auto;
+	}
+	.mobile-container {
+		display: block;
+	}
+	
+}
+@media (max-width:1200px) {
+	.mobile-container {
+		display: block;
+	}
+	.img {
+		display: block;
+	}
+}
+@media (min-width:1201px) {
+	.mobile-container {
+		display: none;
+	}
+	.img {
+		display: none;
+	}
+}
+
+/*video background*/
+#videoBG {	
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+
+}
+@media(min-aspect-ratio:16/9) {
+	#videoBG {
+		width: 100%;
+		height: auto;
+	}
+}
+@media(max-aspect-ratio:9/16) {
+	#videoBG {
+		width: auto;
+		height: 100%;
+	}
+}
+@media(max-width:750px) {
+	#videoBG {
+		display: none;
+	}
+}
+/*video background*/
+
+/*H1*/
+.heading-title-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #FFF5F9;
+	text-transform: uppercase;
+	text-align: center;
+}
+.heading-title-1 h1 {
+	max-width: 700px;
+	background-color: #00000080;
+	border-radius: 15px;
+	padding: 5px 50px;
+	
+}
+@media (max-width:768px) {
+	.heading-title-1 h1 {
+		font-size: 1.75rem;
+	}
+	/*buton1*/
+	.buton-pag-1 a {
+		font-size: 1.5rem;
+	}
+}
+/*H1*/
+/*buton1*/
+.buton-pag-1 {
+	background-color: #ed5e92d3;
+	color: #28161C;
+	font-size: 1.25rem;
+	border: none;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+.buton-pag-1 a {
+	text-decoration: none;
+	color: inherit;
+}
+.buton-pag-1:hover {
+	background-color: white;
+	color: black;
+	transition: 0.35s;
+	cursor: pointer;
+}
+/*buton1*/
+
+/*Sectiunea 1*/
+.sectiunea-1 {
+	width: 100%;
+
+	margin: 0;
+
+	overflow: hidden;
+	background-color: #FFF6F9;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+.container-principal-googlemaps {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 900px;
+	height: 70%;
+	
+}
+.container-principal-googlemaps iframe {
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sectiunea-1 h2 {
+	font-size: 34px;
+	font-weight: 650;
+}
+.text-container {
+	background-color: none;
+	padding: 20px 20px 0px 20px;
+	font-size: 21px;
+	text-align: justify;
+	line-height: 1.6;
+	max-width: 900px;
+}
+.text-container h2 {
+	text-align: left;
+}
+
+/*toggle menu*/
+
+.topnav {
+	overflow: hidden;
+	background-color: white;
+	color: black;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100vw;
+	height: 100vh; 
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	  text-align: center;
+	  z-index: 99;
+	  margin: 0;
+  }
+  .menu-li-icon a {
+	  background-color: none;
+	  font-size: 50rem;
+	  text-align: right;
+  }
+  .menu-li-icon i {
+	  font-size: 2rem;
+	  padding-right: 20px;
+	  padding-top: 19px;
+  }
+  .menu-li-active {
+	background-color:#ed5e92;
+		width: 100vw;
+	color: white;
+	border-radius: 15px;
+  }
+  
+  .topnav #myLinks {
+	display: none;
+  }
+  .mobile-container ul {
+	  list-style: none;
+  }
+  
+  .topnav a {
+	  color: black;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+  
+  .topnav a.icon {
+	  text-decoration: none;
+	background: black;
+	display: block;
+	
+  }
+  .icon {
+	  color: white;
+	  font-size: 25px;
+	  position: relative;
+  }
+  
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  
+/*toggle menu*/
+
+/*menu principal responsive*/
+@media (max-width:1200px) {
+
+
+	.menu-navigare ul {
+		display: none;
+	}	
+} 
+/*Paginisecundare general*/
+.googlemaps{
+	height: 100vh;
+}
+/*Imagini bk secundare*/
+.Paginasecundara {
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	object-fit: cover;
+    z-index: -1;
+	min-height: 500px;
+}
+@media (max-width:500px) {
+	.Paginasecundara {
+		background-attachment: scroll;
+	}
+	
+}
+.cele7minuni {
+	background-image: url("../imagini/cele7minuni.jpg");
+}
+.Piramida {
+	background-image: url("../imagini/1200px-Kheops-Pyramid.jpg");
+
+}
+.templudiana {
+	background-image: url("../imagini/templu-efes-diana.jpg");
+
+}
+.statuiezeus {
+	background-image: url("../imagini/zeus.jpg");
+
+}
+.monumentelemausol {
+	background-image: url("../imagini/halicarnas.jpg");
+}
+.gradinilesuspendate {
+	background-image: url("../imagini/babilon.jpg");
+
+}
+.farulalexandria {
+	background-image: url("../imagini/farul-alexandria.jpg");
+
+}
+.colosulRhodos {
+	background-image: url("../imagini/Rhodos.jpg");
+
+}
+/*loader*/
+@media (max-width:768px) {
+	#preloader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		z-index: 9999;
+		margin: 0;
+		padding: 0;
+	}
+	#loader {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		border: 16px solid rgb(255, 255, 255);
+		border-top: 16px solid #ed5e92;
+		animation: cerc 2s linear infinite;
+		
+	}
+		@keyframes cerc {
+			0% {transform: rotate(0deg);}
+			100% {transform: rotate(360deg);}
+	}
+}
+
+/**/
+/*inapoi la menu*/
+
+.inapoilamenu i{
+	background-color: #ed5e92;
+	color: black;
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+/**/
